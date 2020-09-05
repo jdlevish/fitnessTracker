@@ -12,7 +12,7 @@ require('dotenv').config()
 
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MONGOPASS + "@cluster0.ddnbo.azure.mongodb.net/contact?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MONGOPASS + "@cluster0.ddnbo.azure.mongodb.net/workoutData?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useFindAndModify: false
 });
