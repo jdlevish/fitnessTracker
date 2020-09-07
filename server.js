@@ -10,12 +10,15 @@ app.use(express.json());
 app.use(express.static("public"));
 require('dotenv').config()
 
+app.use(require("./routes/html.js"))
+app.use(require("./routes/api.js"))
 
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MONGOPASS + "@cluster0.ddnbo.azure.mongodb.net/workoutData?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://localhost/workout" || "mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MONGOPASS + "@cluster0.ddnbo.azure.mongodb.net/workout?retryWrites=true&w=majority", {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     useFindAndModify: false
 });
+
 
 
 app.listen(PORT, () => {
