@@ -15,7 +15,7 @@ require('dotenv').config();
 app.use(require("./routes/html.js"))
 app.use(require("./routes/api.js"))
 
-mongoose.connect("mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MONGOPASS + "@cluster0.ddnbo.azure.mongodb.net/workout?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://" + MONGOUSER + ":" + MONGOPASS + "@cluster0.ddnbo.azure.mongodb.net/workout?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
