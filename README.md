@@ -43,5 +43,5 @@ to submitt contributions to this project open a pull request
 contact the creator at jdlevish@gmail.com or jdlevish on github.com
 
 ## licensing
-this project is covered under the BSD 2-Clause License for more info view the  [license.txt](/license.txt)
+this project is covered under the MIT License for more info view the  [license.txt](/license.txt)
     
