@@ -1,5 +1,5 @@
 
-![](./fitness.png)
+![](fitness.png)
 # fitnessTracker
 
 ## ![](https://img.shields.io/github/license/jdlevish/fitnessTracker/)
